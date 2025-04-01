@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საკომუნიკაციო პლატფორმა</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo/communication-bubble-message-chat-svgrepo-com.svg" />
+</head>
+<body>
+    <div class="container">
+        <h1 id="authTitle">გაიარე ავტორიზაცია</h1>
+        
+        <div id="authContainer" class="auth-container">
+            <input type="text" id="username" placeholder="სახელი">
+            <input type="password" id="password" placeholder="პაროლი">
+            <button id="authButton" onclick="login()">შესვლა</button>
+        </div>
+        
+        <div id="contentContainer" style="display: none;">
+            <div class="post-input">
+                <textarea id="postText" placeholder="შეიყვანე შენი პოსტი..."></textarea>
+                <button onclick="addPost()">პოსტის დამატება</button>
+            </div>
+            <div class="upload-section">
+                <input type="file" id="fileInput" />
+                <button onclick="uploadFile()">ატვირთვა</button>
+            </div>
+            <div id="postContainer" class="post-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
